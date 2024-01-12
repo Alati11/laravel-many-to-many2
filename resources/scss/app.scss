@@ -1,0 +1,151 @@
+@import '~bootstrap/scss/bootstrap';
+
+ul, ol, menu {
+    list-style: none;
+  }
+
+  img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    background-size: cover; 
+    background-image: url(https://images7.alphacoders.com/360/360913.jpg);
+    background-position: center; 
+    // background-repeat: no-repeat; 
+    height: 100vh; 
+    overflow:scroll;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    color: white; 
+    font-family: Arial, sans-serif; 
+    background-color: #333333;
+}
+
+.card-tennis {
+    background: rgba(255, 255, 255, 0.1); 
+    color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 1.5em;
+    text-align: center;
+    // line-height: 1.8em;
+    // vertical-align: middle;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateZ(0);
+    backdrop-filter: blur(5px);
+    filter: drop-shadow(30px 30px 50px black);
+}
+
+.card-profile {  
+    margin: 50px auto;
+    width:500px;
+    height:450px;
+}
+
+.card-player {  
+    margin: 10px auto;
+    width:500px;
+    height: 650px;
+    animation: moveCard 5s;
+}
+
+@keyframes moveCard {
+    0%{
+        transform: rotateX(360deg) rotateY(0deg);
+    }
+    50%{
+        transform: rotateX(60deg) rotateY(-45deg);
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(0deg);
+    }
+}
+
+.table-top100 {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 1.5em;
+    margin: 50px auto;
+    height: 100vh;
+    text-align: center;
+    line-height: 1.2em;
+    vertical-align: middle;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateZ(0);
+    backdrop-filter: blur(5px);
+    filter: drop-shadow(30px 30px 50px black);
+}
+
+.edit-player {
+    margin: 50px auto;
+    width:500px;
+    height:500px;
+    text-align: left;
+}
+
+.button { 
+    display: inline-block;  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    padding: 10px;
+    border-style: none;
+    text-align: center;
+    backdrop-filter: blur(5px);
+} 
+
+.btn-add-player {
+    background-color: #CEE947;
+    color: #333333;
+}
+
+.btn-add-player:hover {
+    background-color: #A0D33C;
+    color: whitesmoke;
+}
+
+.title {
+    background-color: transparent;
+    text-align: center;
+}
+
+.nav-bg {
+    background-color: #CEE947;
+    color: whitesmoke;
+}
+
+// HOME
+.btn-home {
+    background: #033b80;
+    color: #fff;
+}
+
+.btn-home:hover {
+    background-color: #0c69dc;
+}
+
+.card-text-passion {
+    margin: 20px auto;
+    padding: 20px;
+    width: 250px;
+    height: 300px; 
+}
+
+// DASHBOARD
+.card-dash {
+    width: 400px;
+    height: 200px;
+    margin: 50px auto;
+    font-size: 30px;
+}
+
+// SHOW
+.img-player{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    margin: 20 auto;
+    margin-bottom: 20px;
+}
