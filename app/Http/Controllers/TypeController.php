@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Player;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreTypeRequest;
+use App\Http\Requests\UpdateTypeRequest;
+use App\Models\Type;
 
-class PlayerController extends Controller
+class TypeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,7 +27,7 @@ class PlayerController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreTypeRequest $request)
     {
         //
     }
@@ -34,7 +35,7 @@ class PlayerController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Player $player)
+    public function show(Type $type)
     {
         //
     }
@@ -42,7 +43,7 @@ class PlayerController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Player $player)
+    public function edit(Type $type)
     {
         //
     }
@@ -50,7 +51,7 @@ class PlayerController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Player $player)
+    public function update(UpdateTypeRequest $request, Type $type)
     {
         //
     }
@@ -58,8 +59,9 @@ class PlayerController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Player $player)
+    public function destroy(Type $type)
     {
         //
     }
 }
+

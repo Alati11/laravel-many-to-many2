@@ -1,5 +1,5 @@
 <?php
-use App\Http\Controllers\Admin\PlayerController;
+use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\AdminController; 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -16,14 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+    return view('home');
+})->name('home');
 
 
 Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(function(){
     Route::get('/',[AdminController::class,'index'])->name('dashboard');
 
-    Route::resource('players',PlayerController::class);
+    Route::resource('projects',ProjectController::class);
 
 });
 

@@ -12,15 +12,11 @@ body {
     margin: 0; 
     padding: 0; 
     background-size: cover; 
-    background-image: url(https://images7.alphacoders.com/360/360913.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2022/09/18/22/19/matrix-7464143_1280.jpg);
     background-position: center; 
     // background-repeat: no-repeat; 
     height: 100vh; 
     overflow:scroll;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
     color: white; 
     font-family: Arial, sans-serif; 
     background-color: #333333;
@@ -68,7 +64,8 @@ body {
 .table-top100 {
     background: rgba(255, 255, 255, 0.1); 
     border-radius: 1.5em;
-    margin: 50px auto;
+    margin: 10px auto;
+    padding: 20px;
     height: 100vh;
     text-align: center;
     line-height: 1.2em;
@@ -97,33 +94,36 @@ body {
 } 
 
 .btn-add-player {
-    background-color: #CEE947;
+    background-color: #72F243;
     color: #333333;
 }
 
 .btn-add-player:hover {
-    background-color: #A0D33C;
+    background-color:#1F4D1C;
     color: whitesmoke;
 }
 
 .title {
     background-color: transparent;
     text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
 }
 
 .nav-bg {
-    background-color: #CEE947;
+    background-color:#72F243;
     color: whitesmoke;
 }
 
 // HOME
 .btn-home {
-    background: #033b80;
-    color: #fff;
+    background: #72F243;
+    color: black;
 }
 
 .btn-home:hover {
-    background-color: #0c69dc;
+    background-color:#1F4D1C;
+    color: whitesmoke;
 }
 
 .card-text-passion {
@@ -143,9 +143,9 @@ body {
 
 // SHOW
 .img-player{
-    width: 100%;
+    width: 80%;
     height: auto;
     padding-top: 10px;
-    margin: 20 auto;
+    margin: 0 auto;
     margin-bottom: 20px;
 }
