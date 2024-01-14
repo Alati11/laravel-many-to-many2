@@ -1,6 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 
-ul, ol, menu {
+ul, ol, menu, a  {
     list-style: none;
   }
 
@@ -20,6 +20,15 @@ body {
     color: white; 
     font-family: Arial, sans-serif; 
     background-color: #333333;
+}
+.nav-link { 
+    color:#333333;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color:whitesmoke;
+    font-size: 16px;
 }
 
 .card-tennis {
