@@ -36,7 +36,7 @@
         
             <tbody>
                 @forelse ($projects as $project)
-                    <tr>
+                    <tr class="project-list">
                         <th> {{$project->id}}</th>
 
                         <td><img class="img-table" src="{{$project->thumb}}"></td>
